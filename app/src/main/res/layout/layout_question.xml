@@ -1,0 +1,125 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_bg_theme"
+        android:orientation="vertical"
+        android:weightSum="20">
+
+
+        <ImageView
+            android:id="@+id/card_image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:src="@drawable/ic_placeholder_image" />
+
+
+        <!--    <androidx.appcompat.widget.AppCompatTextView-->
+        <!--        android:id="@+id/ivTextView"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="0dp"-->
+        <!--        android:layout_marginHorizontal="16dp"-->
+        <!--        android:layout_weight="7"-->
+        <!--        android:gravity="center"-->
+        <!--        android:text="What is the capital of India?"-->
+        <!--        android:textColor="@color/colorWhite"-->
+        <!--        android:textSize="24sp"-->
+        <!--        android:textStyle="bold"-->
+        <!--        app:autoSizeMaxTextSize="22sp"-->
+        <!--        app:autoSizeMinTextSize="12sp"-->
+        <!--        app:autoSizeStepGranularity="2sp"-->
+        <!--        app:autoSizeTextType="uniform" />-->
+
+        <com.android.quizapp.views.utils.MyWebView
+            android:id="@+id/web_ques_english"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="2dp"
+            android:layout_weight="4"
+            android:padding="4dp"
+            app:setTextSize="10sp"
+            app:setViewBackgroundColor="@color/colorWhite" />
+
+        <com.android.quizapp.views.utils.MyWebView
+            android:id="@+id/web_ques_hindi"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="2dp"
+            android:layout_weight="4"
+            android:padding="4dp"
+            app:setTextSize="8sp"
+            app:setViewBackgroundColor="@color/colorWhite" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:orientation="vertical"
+            android:weightSum="6">
+
+            <com.android.quizapp.views.utils.MyWebView
+                android:id="@+id/activity_game_option1_btn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="4dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/fill_color_button"
+                android:text="Option1"
+                app:setClickable="true"
+                app:setTextSize="7sp" />
+
+            <com.android.quizapp.views.utils.MyWebView
+                android:id="@+id/activity_game_option2_btn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="4dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/fill_color_button"
+                app:setClickable="true"
+                app:setTextSize="7sp" />
+
+            <com.android.quizapp.views.utils.MyWebView
+                android:id="@+id/activity_game_option3_btn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="4dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/fill_color_button"
+                android:text="Option3"
+                android:textColor="@color/colorPrimaryText"
+                app:setClickable="true"
+                app:setTextSize="7sp" />
+
+            <com.android.quizapp.views.utils.MyWebView
+                android:id="@+id/activity_game_option4_btn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="4dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/fill_color_button"
+                android:text="Option4"
+                android:textColor="@color/colorPrimaryText"
+                app:setClickable="true"
+                app:setTextSize="7sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+
